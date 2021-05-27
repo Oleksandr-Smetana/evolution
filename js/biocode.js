@@ -304,12 +304,170 @@
 
 //============= THIRD ATTEMPT =============
 
+// let aminoAcid;
+// let codones = [];
+// let protein = [];
+
+// let rna = prompt('Enter the codone');
+// // let rna = 'AAACCCGGGUUU';
+// console.log('mRNA: ', rna);
+// console.log('===========================');
+// for (let i = 0; i < rna.length; i += 3) {
+//   const codone = rna[i] + rna[i + 1] + rna[i + 2];
+//   console.log(codone);
+
+//   codones.push(codone);
+// }
+
+// console.log(codones);
+
+
+// for (let i = 0; i < codones.length; i += 1) {
+//   let codone = codones[i];
+  
+//   switch (codones[i].toUpperCase()) {
+//     case 'UUU':
+//     case 'UUC':
+//       protein.push('Fen');
+//       break;
+
+//     case 'UUA':
+//     case 'UUG':
+//     case 'CUU':
+//     case 'CUC':
+//     case 'CUA':
+//     case 'CUG':
+//       protein.push('Leu');
+//       break;
+
+//     case 'AUU':
+//     case 'AUC':
+//     case 'AUA':
+//       protein.push('Ile');
+//       break;
+
+//     case 'AUG':
+//       protein.push('Met');
+//       break;
+
+//     case 'GUU':
+//     case 'GUC':
+//     case 'GUA':
+//     case 'GUG':
+//       protein.push('Val');
+//       break;
+
+//     case 'UCU':
+//     case 'UCC':
+//     case 'UCA':
+//     case 'UCG':
+//     case 'AGU':
+//     case 'AGU':
+//       protein.push('Ser');
+//       break;
+
+//     case 'CCU':
+//     case 'CCC':
+//     case 'CCA':
+//     case 'CCG':
+//       protein.push('Pro');
+//       break;
+
+//     case 'ACU':
+//     case 'ACC':
+//     case 'ACA':
+//     case 'ACG':
+//       protein.push('Thr');
+//       break;
+
+//     case 'GCU':
+//     case 'GCC':
+//     case 'GCA':
+//     case 'GCG':
+//       protein.push('Ala');
+//       break;
+
+//     case 'UAU':
+//     case 'UAU':
+//       protein.push('Tyr');
+//       break;
+
+//     case 'UAA':
+//     case 'UAG':
+//     case 'UGA':
+//       protein.push('Stop');
+//       break;
+
+//     case 'CAU':
+//     case 'CAC':
+//       protein.push('His');
+//       break;
+
+//     case 'CAA':
+//     case 'CG':
+//       protein.push('Gln');
+//       break;
+
+//     case 'AAU':
+//     case 'AAC':
+//       protein.push('Asn');
+//       break;
+
+//     case 'AAA':
+//     case 'AAG':
+//       protein.push('Lys');
+//       break;
+
+//     case 'GAU':
+//     case 'GAC':
+//       protein.push('Asp');
+//       break;
+
+//     case 'GAA':
+//     case 'GAG':
+//       protein.push('Glu');
+//       break;
+
+//     case 'UGU':
+//     case 'UGU':
+//       protein.push('Cys');
+//       break;
+
+//     case 'UGG':
+//       protein.push('Trp');
+//       break;
+
+//     case 'CGU':
+//     case 'CGC':
+//     case 'CGA':
+//     case 'CGG':
+//     case 'AGA':
+//     case 'AGG':
+//       protein.push('Arg');
+//       break;
+
+//     case 'GGU':
+//     case 'GGC':
+//     case 'GGA':
+//     case 'GGG':
+//       protein.push('Gly');
+//       break;
+
+//     default:
+//       console.log('Wrong codone');
+//   }
+// }
+// console.log(protein.join('-'));
+
+
+//============= FOURS ATTEMPT =============
+
 let aminoAcid;
 let codones = [];
 let protein = [];
 
-let rna = prompt('Enter the codone');
-// let rna = 'AAACCCGGGUUU';
+// let rna = prompt('Enter the codone');
+let rna = 'AAACCCGGGUUU';
 console.log('mRNA: ', rna);
 console.log('===========================');
 for (let i = 0; i < rna.length; i += 3) {
@@ -325,134 +483,113 @@ console.log(codones);
 for (let i = 0; i < codones.length; i += 1) {
   let codone = codones[i];
   
-  switch (codones[i].toUpperCase()) {
-    case 'UUU':
-    case 'UUC':
+  const theCode = {
+    case: 'UUU',
+    case: 'UUC',
       protein.push('Fen');
-      break;
-
-    case 'UUA':
-    case 'UUG':
-    case 'CUU':
-    case 'CUC':
-    case 'CUA':
-    case 'CUG':
+    
+    case: 'UUA',
+    case: 'UUG',
+    case: 'CUU',
+    case: 'CUC',
+    case: 'CUA',
+    case: 'CUG',
       protein.push('Leu');
-      break;
-
-    case 'AUU':
-    case 'AUC':
-    case 'AUA':
+      
+    case: 'AUU',
+    case: 'AUC',
+    case: 'AUA',
       protein.push('Ile');
-      break;
-
-    case 'AUG':
+      
+    case: 'AUG',
       protein.push('Met');
-      break;
-
-    case 'GUU':
-    case 'GUC':
-    case 'GUA':
-    case 'GUG':
+      
+    case: 'GUU',
+    case: 'GUC',
+    case: 'GUA',
+    case: 'GUG',
       protein.push('Val');
-      break;
-
-    case 'UCU':
-    case 'UCC':
-    case 'UCA':
-    case 'UCG':
-    case 'AGU':
-    case 'AGU':
+      
+    case: 'UCU',
+    case: 'UCC',
+    case: 'UCA',
+    case: 'UCG',
+    case: 'AGU',
+    case: 'AGU',
       protein.push('Ser');
-      break;
-
-    case 'CCU':
-    case 'CCC':
-    case 'CCA':
-    case 'CCG':
+      
+    case: 'CCU',
+    case: 'CCC',
+    case: 'CCA',
+    case: 'CCG',
       protein.push('Pro');
-      break;
-
-    case 'ACU':
-    case 'ACC':
-    case 'ACA':
-    case 'ACG':
+      
+    case: 'ACU',
+    case: 'ACC',
+    case: 'ACA',
+    case: 'ACG',
       protein.push('Thr');
-      break;
-
-    case 'GCU':
-    case 'GCC':
-    case 'GCA':
-    case 'GCG':
+      
+    case: 'GCU',
+    case: 'GCC',
+    case: 'GCA',
+    case: 'GCG',
       protein.push('Ala');
-      break;
-
-    case 'UAU':
-    case 'UAU':
+      
+    case: 'UAU',
+    case: 'UAU',
       protein.push('Tyr');
-      break;
-
-    case 'UAA':
-    case 'UAG':
-    case 'UGA':
+      
+    case: 'UAA',
+    case: 'UAG',
+    case: 'UGA',
       protein.push('Stop');
-      break;
-
-    case 'CAU':
-    case 'CAC':
+      
+    case: 'CAU',
+    case: 'CAC',
       protein.push('His');
-      break;
-
-    case 'CAA':
-    case 'CG':
+      
+    case: 'CAA',
+    case: 'CG',
       protein.push('Gln');
-      break;
-
-    case 'AAU':
-    case 'AAC':
+      
+    case: 'AAU',
+    case: 'AAC',
       protein.push('Asn');
-      break;
-
-    case 'AAA':
-    case 'AAG':
+      
+    case: 'AAA',
+    case: 'AAG',
       protein.push('Lys');
-      break;
-
-    case 'GAU':
-    case 'GAC':
+      
+    case: 'GAU',
+    case: 'GAC',
       protein.push('Asp');
-      break;
-
-    case 'GAA':
-    case 'GAG':
+      
+    case: 'GAA',
+    case: 'GAG',
       protein.push('Glu');
-      break;
-
-    case 'UGU':
-    case 'UGU':
+      
+    case: 'UGU',
+    case: 'UGU',
       protein.push('Cys');
-      break;
-
-    case 'UGG':
+      
+    case: 'UGG',
       protein.push('Trp');
-      break;
-
-    case 'CGU':
-    case 'CGC':
-    case 'CGA':
-    case 'CGG':
-    case 'AGA':
-    case 'AGG':
+      
+    case: 'CGU',
+    case: 'CGC',
+    case: 'CGA',
+    case: 'CGG',
+    case: 'AGA',
+    case: 'AGG',
       protein.push('Arg');
-      break;
-
-    case 'GGU':
-    case 'GGC':
-    case 'GGA':
-    case 'GGG':
+      
+    case: 'GGU',
+    case: 'GGC',
+    case: 'GGA',
+    case: 'GGG',
       protein.push('Gly');
-      break;
-
+      
     default:
       console.log('Wrong codone');
   }
